@@ -129,6 +129,8 @@ key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/gen
 Personally, I've found this easier to set up and deal with. You can also [set 
 up with 
 HTTPS](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git).
+If this is your first time connecting your GitHub account, use SSH, as this is
+what we will be using for the different steps of this project.
 
 For all of these steps, ChatGPT and other AI tools are your friend. If you do
 not want to read the error messages your computer throws at you, ask your
@@ -137,5 +139,7 @@ training set help you with your own.
 
 # Next steps
 
-Congratulations! You're ready to use Git. Next, [learn how to use your new 
-tools](INSTRUCTIONS.md).
+Congratulations! You're ready to use Git. Star this repository using the button
+at the top of the page to save it to your list of starred repos. This makes
+it easier to find it when you come back to this project. Next, [learn how to 
+use your new tools](INSTRUCTIONS.md).
