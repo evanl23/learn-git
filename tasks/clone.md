@@ -133,7 +133,9 @@ To do this, run these commands:
 
 This will undo your edits to `names.txt`, but will get your local repository up
 to date with the one used by everyone. Simply add your name to the document
-again, and try committing. This time, it should work.
+again, and try committing and pushing to the repository again. This time, it
+should work.
 
-Congratulations! You've make your first (of hopefully many) commits using the
-git version control software. Next, let's learn how to create a branch in git.
+Congratulations! You've make your first commit (of hopefully many) using the
+git version control software. Next, [let's learn how to fork a repository in 
+git](/tasks/fork.md).

@@ -1,26 +1,3 @@
-For this task, the goal is to learn the following commands and things:
-- how to fork a repository from GitHub  
-- cloning a fork
-- git remote add upstream
-- why fork repos in the first place?
-
-For this task, we will be forking learn-git, cloning the fork, describing
-the differences between this and the bualpha/learn-git, and syncing a fork
-(git remote add upstream). We'll then go into why you'd want to fork a
-repository in the first place, how that is useful in general, for open source,
-and for our club.
-
-TODO
-
-- [x] fork learn-git
-- [x] clone the fork of learn-git
-- [x] describe differences between a fork and an original repo
-- [x] sync the fork
-- [ ] explain why forking, where they are used
-- [ ] explain how we will use forking in our club
-
-----------------
-
 # Creating a fork
 
 Our next step in learning git and GitHub is designed to prevent the problem we
@@ -162,8 +139,55 @@ Sometimes, you'll see a lovely message like this:
 
 Other times, you'll have to deal with merge conflicts. For now, [check out
 GitHub's page](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts)
-on dealing with merge conflicts. We'll deal with those in a later section.
+on handling with merge conflicts. We'll deal with those in a later section.
 
 ## Why do we use forks?
 
+You may have seen some of the benefits of forking already. One of the main
+benefits of forking is visible in the chaos of the first task. When a repository
+allows anyone to push commits to it, this can lead to confusion and a
+repository in disarray. As a result, owners of repositories that have more than
+one contributor typically don't add other collaborators to their repository,
+preferring instead to handle pull requests through forks.
+
+By allowing you to create a copy of someone's repository, forking gives you the
+freedom to do as you wish! You can choose to make that repository your own,
+going off in a completely different direction than what the original owners
+intended. You can also choose to work with the owners and maintainers, helping
+with tasks that they want to accomplish, updating the project to accomodate new
+tools and changes.
+
+Forks are also the main way your workflow will be structured going forward.
+Unless you are working on a personal project or on something where you are the
+sole contributor, you will likely be forking someone else's repository, making
+changes there, and trying to merge those changes with the larger codebase
+(through pull requests). See [this Stack Overflow 
+post](https://stackoverflow.com/questions/31209669/github-why-should-i-fork)
+or [the GitHub 
+documentation](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+for more good reasons on why to use forking when working on projects. We'll get
+into the workflow of forks over the next few tasks coming up, as well as how to
+use git to manage your project well.
+
 ## Forking in the Quantitative Finance Club
+
+You are all going to be working on projects this semester with teammates. You'll
+be writing code in Jupyter notebooks, creating papers and presentations, taking
+notes, aggregating research materials and links, and doing other things that
+require collaboration. While this could be done through something like Google
+Drive, an email chain, or frequent meet-ups, using GitHub will allow you more
+freedom in what you can do as a team. It will also give you the chance to put
+together a professional project that you can add to your resume, your portfolio,
+or your website to showcase to companies that might want to hire you. This will
+make it easy for them (and others) to evaluate the work you've done.
+
+One of your team members will create your initial repository on GitHub, and
+depending on your size and the nature of your project, you will all either be
+added as contributors or create individual forks of the repository. Weigh the
+benefits and risks of being contributors vs. creating forks before deciding
+to do so. Additionally, if your project deals with the BU Alpha organization
+on GitHub, you'll be required to fork the specific repository and submit pull
+requests for us to review.
+
+Now that you've created and synced your fork, [learn about branching and
+merging in git](/tasks/branch.md) with your next task. 
