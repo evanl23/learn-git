@@ -14,10 +14,6 @@ We will do this using a task of adding your name to a text file (names.txt).
 - [] Take screenshots as you go through the steps and add to this file
 - [] Explain what happens in each command
 
-// Question for Ryan: is it ok if people clone the repository and commit
-directly to it on their first go? I think this would be easier than asking
-them to fork it, but if you'd rather them create forks on their first go
-then that works too.
 
 --------
 
@@ -46,11 +42,11 @@ To clone this repository, first go to the main page (bualpha/learn-git). At the
 top of the page, you will see several buttons, one of which is green and says
 '<> Code'.
 
-// TODO: insert image circling CODE
+![Code button](/img/code_button.png)
 
 Click this button, then go to the 'SSH' tab and copy the address you find there.
 
-// TODO: insert image clicking copy of SSH code
+![SSH button](/img/ssh_button.png)
 
 Open your git bash (Windows) or command line (Mac) and navigate to a directory
 where you would like to add this directory. I have mine in a directory called
@@ -68,7 +64,7 @@ directory (learn-git). To do so, type the following command:
 
 You should see the following pop up:
 
-// TODO: clone learn-git and take screenshot of git bash window
+![cloning repository](/img/git_clone.png)
 
 You now have a copy of the learn-git repository (this one) on your machine.
 
@@ -79,7 +75,7 @@ the repository. You can use any text editor you'd like to edit this file: your
 basic notepad, VSCode, vi(m), emacs, Sublime, Coda, etc. Add your name to a new
 line of the file and save your changes to the file in the editor you're using.
 
-// TODO: show me adding name in emacs
+![adding name](/img/adding_name.png)
 
 Next, we'll see how this edit changed our local repository. Go back to your
 bash command line and run `git diff`. This will highlight the differences
