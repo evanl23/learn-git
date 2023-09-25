@@ -200,3 +200,7 @@ Note: if we were dealing with path and filename conflicts, we could do this
 using `git add` and `git rm`. However, we are dealing with the contents of a
 file, so we need to tackle that head-on.
 
+There are several ways to deal with merge conflicts, but one common way is to
+use the command `git mergetool`. This will lead you to a window with three
+screens: the two files that are in conflict (up top), and the result of the
+merge (below).
