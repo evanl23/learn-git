@@ -157,7 +157,14 @@ your `main` branch already.
 ## Deleting your branches
 
 Now that both branches have been merged with our `main` branch, we don't have
-a need for them in our repository. We can delete
+a need for them in our repository. We can delete the `multiples` branch of the
+repository with the `-d` option of `git branch`:
+
+    git branch -d multiples
+
+Do the same now for the `pallindrome` branch of the repository. Now, when you
+run the command `git branch`, you should only see the `main` branch of your
+repository.
 
 ## Merge conflicts
 
@@ -165,7 +172,10 @@ To this point, you haven't had to deal with any merge conflicts in your
 repository yet. What happens if we have such a conflict? Let's create one
 and find out.
 
-Create a third new branch (fourth total) and name it `hello`. Create a fourth
-new branch and name it `goodbye`. In both branches, create a file. Name the
-file `hello.txt`. In the `hello` branch, write `hello` in the file, and in the
-`goodbye` branch, write `goodbye`.
+Create a third new branch (fourth total) and name it `hello`. In both your
+`main` and `hello` branches, create a file. Name the file `hello.txt`. In the
+`hello` branch, write `hello` in the file, and in your `main` branch, write 
+`goodbye`. Commit `hello.txt` twice, once in each branch.
+
+At this point, we now have two branches with different copies of a file with
+the same name. What happens if we attempt to run `git merge hello`?
