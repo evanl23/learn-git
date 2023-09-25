@@ -18,7 +18,8 @@ Your second task is to create your own fork of the `learn-git` repository to
 use for the rest of your tasks. [Click here](/tasks/fork.md) to begin.
 
 ### Branching and merging
-// TODO
+Your third task is to complete three problems on three different branches,
+then merge those branches together. [Click here](/tasks/branch.md) to begin.
 
 ### Undoing a change
 // TODO
