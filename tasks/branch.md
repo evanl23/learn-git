@@ -166,7 +166,7 @@ Do the same now for the `pallindrome` branch of the repository. Now, when you
 run the command `git branch`, you should only see the `main` branch of your
 repository.
 
-## Merge conflicts
+## Surprise assignment: merge conflicts
 
 To this point, you haven't had to deal with any merge conflicts in your
 repository yet. What happens if we have such a conflict? Let's create one
@@ -196,11 +196,65 @@ want to make a compromise here, we want our file `hello.txt` to look like:
     hello
     goodbye
 
+//TODO: can insert screenshots here if needed; this part below can get a bit
+confusing
+
 Note: if we were dealing with path and filename conflicts, we could do this
 using `git add` and `git rm`. However, we are dealing with the contents of a
 file, so we need to tackle that head-on.
 
-There are several ways to deal with merge conflicts, but one common way is to
+There are several ways to deal with merge conflicts; one common way is to
 use the command `git mergetool`. This will lead you to a window with three
 screens: the two files that are in conflict (up top), and the result of the
-merge (below).
+merge (below). In the window below, try to make the text file look like the
+output above. The default text editor used by git is `vim`. The key bindings
+and functionality can be confusing at first, but it is a very powerful editor
+(except for those who know emacs). You can either learn enough `vim` commands to
+make these edits, or change your mergetool config file to add a new text editor
+to handle merge conflicts. 
+
+Once you're done, commit again. Congratulations, you've handled your first
+merge conflict! Celebrate by getting rid of the `hello` branch (and your
+`hello.txt` file if you'd like). Now, let's move on to the third problem
+assigned.
+
+## Brief interlude: git checkout
+
+The `git checkout` command has a long history in Git. Originally, it served
+three primary functions:
+
+- Switching branches
+- Checking out file contents from different commits
+- Discarding changes in the working directory
+
+As Git evolved, the `checkout` command ended up doing too many different things.
+This made it confusing for new users to learn. 
+
+So in recent versions of Git, the `checkout` command was split into two
+separate commands:
+
+- `git switch` - for changing branches
+- `git restore` - handles undoing changes to files
+
+The `git restore` command is used for undoing changes in your working
+directory. It lets you restore files back to how they looked in an older commit.
+
+If you'd like more information about this, see either
+- [Stack Overflow](https://stackoverflow.com/questions/57265785/whats-the-difference-between-git-switch-and-git-checkout-branch)
+- [git v2.23 release 
+notes](https://github.com/git/git/blob/master/Documentation/RelNotes/2.23.0.txt)
+
+## Solving the third problem
+
+By this point, you should have enough knowledge to handle your third task.
+Create a branch called `primes`, and in this branch (under the `src` directory
+create a file named `primes.py` that solves the following problem:
+
+    What is the 10001st prime number?
+
+Again, you can [check your answer here](https://projecteuler.net/problem=7).
+Now, merge your solution branch to your `main` branch. Don't delete your 
+`primes` branch, however; you'll need this for your next task.
+
+Once you've solved this third problem, [learn about undoing a 
+change](/tasks/undo.md) in your next task.
