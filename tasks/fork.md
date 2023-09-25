@@ -10,4 +10,15 @@ the differences between this and the bualpha/learn-git, and syncing a fork
 repository in the first place, how that is useful in general, for open source,
 and for our club.
 
+TODO
+
+- [ ] fork learn-git
+- [ ] clone the fork of learn-git
+- [ ] describe differences between a fork and an original repo
+- [ ] sync the fork
+- [ ] explain why forking, where they are used
+- [ ] explain how we will use forking in our club
+
 ----------------
+
+# Creating a fork

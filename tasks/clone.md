@@ -23,20 +23,21 @@ To clone this repository, first go to the main page (bualpha/learn-git). At the
 top of the page, you will see several buttons, one of which is green and says
 '<> Code'.
 
-![Code button](/img/code_button.png)
+![Code button](/img/clone/code_button.png)
 
 Click this button, then go to the 'SSH' tab and copy the address you find there.
 
-![SSH button](/img/ssh_button.png)
+![SSH button](/img/clone/ssh_button.png)
 
-Open your git bash (Windows) or command line (Mac) and navigate to a directory
-where you would like to add this directory. I have mine in a directory called
-"Git Repos". To navigate to this using the command line, use the command `cd`
-(change directory) followed by the name of the directory you'd like to enter.
-To see the directories that you can go to, use `ls`. To make a new directory
-(if you want one for this repository), use the command `mkdir <your new name>`.
-These are all commands using Bash syntax, so if you get confused here, look up
-how to create a new directory, how to change directories, use ChatGPT, etc.
+Open your git bash (Windows) or command line (Mac, Linux) and navigate to a 
+directory where you would like to add this directory. I have mine in a directory
+called "Git Repos". To navigate to this using the command line, use the command
+`cd` (change directory) followed by the name of the directory you'd like to
+enter. To see the directories that you can go to, use `ls`. To make a new
+directory (if you want one for this repository), use the command `mkdir <your
+new name>`. These are all commands using Bash syntax, so if you get confused
+here: look up how to create a new directory, how to change directories, use
+ChatGPT, etc.
 
 Now, you should be in a location in your file tree where you want to add this
 directory (learn-git). To do so, type the following command:
@@ -45,7 +46,7 @@ directory (learn-git). To do so, type the following command:
 
 You should see the following pop up:
 
-![cloning repository](/img/git_clone.png)
+![cloning repository](/img/clone/git_clone.png)
 
 You now have a copy of the learn-git repository (this one) on your machine.
 
@@ -56,14 +57,14 @@ the repository. You can use any text editor you'd like to edit this file: your
 basic notepad, VSCode, vi(m), emacs, Sublime, Coda, etc. Add your name to a new
 line of the file and save your changes to the file in the editor you're using.
 
-![adding name](/img/adding_name.png)
+![adding name](/img/clone/adding_name.png)
 
 Next, we'll see how this edit changed our local repository. Go back to your
 bash command line and run `git diff`. This will highlight the differences
 between the files on your computer and the ones in the repository on your local
 machine.
 
-![checking diff](/img/git_diff_names.png)
+![checking diff](/img/clone/git_diff_names.png)
 
 Note that `git diff` does not show information for files that you've just
 created, but haven't included in your local repository yet. You can also use
@@ -81,11 +82,11 @@ name update.
 
 First, let's go back to the diagram of basic git commands:
 
-![showing diagram](/img/git_diagram.png)
+![showing diagram](/img/clone/git_diagram.png)
 
 We can check where we are in this chart by running the command `git status`:
 
-![git status for names.txt](/img/git_status_names.png)
+![git status for names.txt](/img/clone/git_status_names.png)
 
 From the diagram, you can see the order of the commands we need, as shown by 
 the arrows. Furthermore, from running `git status`, it is clear that we have

@@ -10,10 +10,12 @@
 8. [git pull request](#pull-requests)
 
 ### Cloning a repository
-// TODO
+Your first task is to add your name to `names.txt`.
+[Click here](/tasks/clone.md) to begin.
 
 ### Forking a repository
-// TODO
+Your second task is to create your own fork of the `learn-git` repository to
+use for the rest of your tasks. [Click here](/tasks/fork.md) to begin.
 
 ### Branching and merging
 // TODO
