@@ -1,22 +1,3 @@
-For this task, the goal is to learn the following commands:
-- git clone
-- git status
-- git add
-- git commit
-- git push
-- git status
-- git diff
-
-We will do this using a task of adding your name to a text file (names.txt).
-
-//TODO
-- [x] Write out instructions on what to do
-- [] Take screenshots as you go through the steps and add to this file
-- [] Explain what happens in each command
-
-
---------
-
 # Cloning a repository
 
 The first step in using git and GitHub is to create or copy a repository. To
@@ -104,7 +85,7 @@ First, let's go back to the diagram of basic git commands:
 
 We can check where we are in this chart by running the command `git status`:
 
-// TODO: insert git status image
+![git status for names.txt](/img/git_status_names.png)
 
 From the diagram, you can see the order of the commands we need, as shown by 
 the arrows. Furthermore, from running `git status`, it is clear that we have
@@ -136,6 +117,22 @@ repository on your computer is different than the one on GitHub's servers. To
 fix this, we need to run one final command:
 
     git push
+
+If you run into issues with this command, it may mean that the repository on
+your computer is different than the one on GitHub. Theres's a good chance some
+of your peers have also added their names to `names.txt`! In this case, you
+need to update your local repository to match the one on GitHub. This way, when
+you commit your name, there won't be any conflicts with the repository stored
+on GitHub's servers.
+
+To do this, run these commands:
+
+    git reset --hard HEAD
+    git pull
+
+This will undo your edits to `names.txt`, but will get your local repository up
+to date with the one used by everyone. Simply add your name to the document
+again, and try committing. This time, it should work.
 
 Congratulations! You've make your first (of hopefully many) commits using the
 git version control software. Next, let's learn how to create a branch in git.
