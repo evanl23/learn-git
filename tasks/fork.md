@@ -12,10 +12,10 @@ and for our club.
 
 TODO
 
-- [ ] fork learn-git
-- [ ] clone the fork of learn-git
-- [ ] describe differences between a fork and an original repo
-- [ ] sync the fork
+- [x] fork learn-git
+- [x] clone the fork of learn-git
+- [x] describe differences between a fork and an original repo
+- [x] sync the fork
 - [ ] explain why forking, where they are used
 - [ ] explain how we will use forking in our club
 
@@ -112,6 +112,57 @@ to update our repository to match the original.
 
 First, open your command line (Mac and Linux) or Git Bash (Windows). Navigate
 into your fork using the `cd` (change directory) command.
+
+The first thing we'll do is check if we have a remote repository set up for our
+fork. Use the command `git remote -v` to list your configured repositories; the
+`-v` flag (`verbose`) shows the URLs after the names of our branches. Right
+now, we only have one branch (`origin`) and no remote branch configured.
+
+![git remote -v](/img/fork/git_remote_v.png)
+
+To configure our remote branch, we will need to specify the *upstream*
+repository to configure. To do this, go back to the original learn-git
+repository that is owned by BU Alpha (**not your fork**). Copy the SSH
+address if you've configured GitHub using SSH; otherwise, use the HTTPS link
+provided. Navigate back to your terminal and paste the link into your command
+line at the end of this command (as shown here):
+
+    git remote add upstream git@github.com:bualpha/learn-git.git
+
+Run the command `git remote -v` again. Your terminal should now look something
+like this:
+
+![git remote -v again](/img/fork/git_remote_v_2.png)
+
+If you'd like to see the official GitHub page on configuring a remote
+repository, check out
+[this link here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-repository-for-a-fork).
+
+### Updating your fork
+
+Now that you've configured our fork with the original repository, it's time to
+learn how to update your fork. To sync your fork, first run the command 
+`git fetch upstream`. `git fetch` allows us to retrieve changes made to another
+repository since our last check-in. In this case, we are retrieving the changes
+made to our `upstream` repository, which we just configured in the last step to
+be BU Alpha's learn-git repository. You should see something like this on
+your terminal:
+
+![git fetch upstream](/img/fork/git_fetch_upstream.png)
+
+Now that you've gotten the updates to the original repository, the next step
+is to merge your local repository and BU Alpha's repository using the command
+`git merge`. Merging bring your default branch (usually `main`) into sync with
+the repository you have set as `upstream`, without losing any changes you've
+make (unlike sometimes with `git pull`).
+
+Sometimes, you'll see a lovely message like this:
+
+![git merge good message](/img/fork/git_merge.png)
+
+Other times, you'll have to deal with merge conflicts. For now, [check out
+GitHub's page](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts)
+on dealing with merge conflicts. We'll deal with those in a later section.
 
 ## Why do we use forks?
 
