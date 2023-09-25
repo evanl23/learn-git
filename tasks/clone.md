@@ -79,9 +79,10 @@ line of the file and save your changes to the file in the editor you're using.
 
 Next, we'll see how this edit changed our local repository. Go back to your
 bash command line and run `git diff`. This will highlight the differences
-between the files on your computer and the ones in the repository on GitHub.
+between the files on your computer and the ones in the repository on your local
+machine.
 
-// TODO: add image of using git diff
+![checking diff](/img/git_diff_names.png)
 
 Note that `git diff` does not show information for files that you've just
 created, but haven't included in your local repository yet. You can also use
@@ -99,7 +100,7 @@ name update.
 
 First, let's go back to the diagram of basic git commands:
 
-// TODO: insert git diagram
+![showing diagram](/img/git_diagram.png)
 
 We can check where we are in this chart by running the command `git status`:
 
