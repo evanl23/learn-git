@@ -179,3 +179,24 @@ Create a third new branch (fourth total) and name it `hello`. In both your
 
 At this point, we now have two branches with different copies of a file with
 the same name. What happens if we attempt to run `git merge hello`?
+
+![merge conflict](/img/branch/merge_fail.png)
+
+It appears we have a conflict! On our `hello` branch, `hello.txt` is
+
+    hello
+
+However, on our `main` branch, `hello.txt` is
+
+    goodbye
+
+To move forward with our repository, we need to merge this conflict. Since we
+want to make a compromise here, we want our file `hello.txt` to look like:
+
+    hello
+    goodbye
+
+Note: if we were dealing with path and filename conflicts, we could do this
+using `git add` and `git rm`. However, we are dealing with the contents of a
+file, so we need to tackle that head-on.
+
