@@ -2,7 +2,7 @@ For this task, the goal is to learn the following commands:
 - git branch DONE
 - git checkout
 - git switch DONE
-- git merge
+- git merge DONE
 - git rebase
 - git log
 - git restore
@@ -30,11 +30,10 @@ TODO
 - [x] create new branch called pallindrome
 - [x] switch to this branch
 - [x] write pallindrome.py (problem 4)
-- [ ] push multiples to remote repo
-- [ ] merge with main branch
-- [ ] merge pallindrome with main branch
-- [ ] use rebase to deal with merge conflict
+- [x] merge with main branch
+- [x] merge pallindrome with main branch
 - [ ] delete branches after merging to main
+- [ ] use rebase to deal with merge conflict
 - [ ] give them third problem to do on their own
 - [ ] with third problem, do NOT delete branch after merging - will use for
 next task (undo)
@@ -138,6 +137,35 @@ made our changes in each of our branches, it's time to merge them together!
 
 ### Merge `multiples`
 
-To merge your `multiples` and `main` branches, run the command
+To merge your `multiples` and `main` branches, make sure you are on the `main`
+branch of your repository. Run the command
 
-    git merge
+    git merge multiples
+
+This will merge your branch into the repository, assuming that no conflicts
+exist. For this problem, there should be no conflicts, as the only difference
+between your `main` and `multiples` branches should be the solution file you
+created.
+
+### Merge `pallindrome`
+
+Peform the same commands to merge your `pallindrome` branch. Again, make sure
+you are on your main branch before merging. There should be no merge conflicts
+here, as you are adding a different file (`pallindrome.py`) that is not in
+your `main` branch already.
+
+## Deleting your branches
+
+Now that both branches have been merged with our `main` branch, we don't have
+a need for them in our repository. We can delete
+
+## Merge conflicts
+
+To this point, you haven't had to deal with any merge conflicts in your
+repository yet. What happens if we have such a conflict? Let's create one
+and find out.
+
+Create a third new branch (fourth total) and name it `hello`. Create a fourth
+new branch and name it `goodbye`. In both branches, create a file. Name the
+file `hello.txt`. In the `hello` branch, write `hello` in the file, and in the
+`goodbye` branch, write `goodbye`.
