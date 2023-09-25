@@ -3,7 +3,7 @@
 This project is intended to get you up to speed with the software tools Git
 and GitHub, which you will be using both during Quant and in your classes,
 projects, and careers afterwards. This is not meant to be comprehensive. After
-following the instructions [here](INSTRUCTIONS.md), you'll be able to use basic
+completing the tasks [here](TASKS.md), you'll be able to use basic
 Git commands such as clone, pull, add, commit, push, and others.
 
 The purpose of this is to allow you to work on projects in groups. [Version
@@ -142,4 +142,4 @@ training set help you with your own.
 Congratulations! You're ready to use Git. Star this repository using the button
 at the top of the page to save it to your list of starred repos. This makes
 it easier to find it when you come back to this project. Next, [learn how to 
-use your new tools](INSTRUCTIONS.md).
+use your new tools](TASKS.md).
