@@ -14,7 +14,6 @@ their material is licensed under the MIT License, which can be found at
 [this link](https://github.com/firstcontributions/first-contributions/blob/main/LICENSE).
 
 &nbsp;
----
 &nbsp; 
 
 This document is dedicated to all the tips and tricks websites, blog posts,
