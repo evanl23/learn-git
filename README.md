@@ -1,7 +1,7 @@
 # Learning Git
 
-This project is intended to get you up to speed with the software tools Git
-and GitHub, which you will be using both during Quant and in your classes,
+This repository is intended to get you up to speed with the software tools Git
+and GitHub, which you will be using during quant meetings and in your classes,
 projects, and careers afterwards. This is not meant to be comprehensive but
 instead give you a place to get started. After finishing the assignment, you'll
 be able to use the Git commands clone, pull, add, commit, and push, as well
@@ -19,8 +19,7 @@ that hosts our projects and allows us to use Git better.
 * Git operates on the command line (your terminal), while you use GitHub on
 the Internet.
 * Git is a local program downloaded onto your computer that stores
-repositories and code on your device. GitHub hosts repositories on its servers
-("in the cloud").
+repositories and code on your device. GitHub hosts repositories on its servers (called remote, "in the cloud").
 
 If you want to learn more about the two, you can visit their home pages and
 read the documentation featured there.
@@ -34,3 +33,5 @@ git and a GitHub account)
 3. Add your name to names.txt (see `name.md`).
 4. Submit a pull request with your change (see `pr.md`).
 
+## Issues
+If something is not clear, or if there are some issues related to the repository, please submit an issue.
